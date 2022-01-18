@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+ adminpanel:
+  image: nginx
+  container_name: c1
+  ports:
+   - "8080:80"
+
+ application1:
+  image: ubuntu
+  container_name: c2
+
+ application2:
+  image: centos
+  container_name: c3
+
+ database:
+  image: chef/chefdk
